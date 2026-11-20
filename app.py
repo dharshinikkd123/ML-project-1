@@ -7,7 +7,7 @@ class StudentData(BaseModel):
     study_hours:float
     attendance:float
     previous_marks:float
-model=joblib.load("models/student_models.pkl")
+model=joblib.load("Models/student_models.pkl")
 @app.get("/")
 def home():
     return {"message":"Student Performance prediction api running"}
