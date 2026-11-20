@@ -10,7 +10,7 @@ class StudentData(BaseModel):
 model=joblib.load("Models/student_models.pkl")
 @app.get("/")
 def home():
-    return {"message":"Student Performance prediction api running"}
+    return {"message":"Student Performance prediction api "}
 @app.post("/predict")
 def predict(student:StudentData):
     try:
